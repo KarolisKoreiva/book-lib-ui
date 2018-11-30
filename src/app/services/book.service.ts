@@ -11,7 +11,7 @@ export class BookService {
   constructor(private httpClient: HttpClient) {}
 
   getBooks() {
-    return this.httpClient.get<Book[]>(environment.apiUrl + '/');
+    return this.httpClient.get<Book[]>(environment.apiUrl + '/books');
   }
 
   getBook(id: string) {
