@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}

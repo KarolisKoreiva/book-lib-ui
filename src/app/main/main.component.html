@@ -1,0 +1,23 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let book of books; let i=index" class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" holderjs data-src="holder.js/100px200?theme=thumb&bg=55595c&fg=eceeef&text=BookPicture" alt="{{book.title}}">
+          <div class="card-body">
+            <h6 class="card-title">{{book.title}}</h6>
+            <p class="card-text">{{book.author}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a routerLink="/bookview/{{book._id}}" class="btn btn-sm btn-outline-secondary">View</a>
+                <a routerLink="/bookedit/{{book._id}}" class="btn btn-sm btn-outline-secondary">Edit</a>
+                <button class="btn btn-sm btn-outline-secondary" (click)="onDelete(i)">Delete</button>
+              </div>
+              <small class="text-muted">{{book.year}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
