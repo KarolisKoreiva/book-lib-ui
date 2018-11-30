@@ -1,0 +1,4 @@
+applications:
+- name: book-lib-ui
+  random-route: false
+  memory: 128M
